@@ -6,8 +6,8 @@
     "start:dev": "webpack serve --config webpack.config.dev.js --port 3000",
     "prestart:api": "node tools/createMockDb.js",
     "start:api": "node tools/apiServer.js",
-    "build": "npm run build",
-    "test": "npm test",
+    "build": "node build src/index.html",
+    "test": "node test",
     "eject": "react-scripts eject"
   },
   "dependencies": {
