@@ -5,7 +5,10 @@
     "start": "run-p start:dev start:api",
     "start:dev": "webpack serve --config webpack.config.dev.js --port 3000",
     "prestart:api": "node tools/createMockDb.js",
-    "start:api": "node tools/apiServer.js"
+    "start:api": "node tools/apiServer.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
     "bootstrap": "5.0.2",
@@ -48,6 +51,7 @@
     "redux-immutable-state-invariant": "^2.1.0",
     "redux-mock-store": "1.5.4",
     "rimraf": "3.0.2",
+    "stable": "^0.1.8",
     "style-loader": "3.0.0",
     "webpack": "^5.74.0",
     "webpack-bundle-analyzer": "4.4.2",
